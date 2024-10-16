@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pizza e Sabor</title> 
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <h1><img src="pizz1.png" alt="Ícone de Pizza" class="icon"> Pizza e Sabor</h1> <!-- Adicione o caminho do ícone aqui -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Nossas Pizzas</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="intro-buttons">
+        <a href="#menu">Nossas Pizzas</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    <section id="menu">
+        <h2>Conheça Nosso Cardápio</h2>
+        <div class="pizzas-container">
+            <div class="pizza-item">
+                <img src="pizza-com-queijo-na-superficie-de-madeira-marrom-na-superficie-brilhante_140725-14195.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Preço: R$ 29,90</p>
+            </div>
+            <div class="pizza-item">
+                <img src="pizza-com-legumes-e-salsichas_141793-344 (1).jpg" alt="Pizza Calabresa">
+                <h3>Pizza Calabresa</h3>
+                <p>Preço: R$ 34,90</p>
+            </div>
+            <div class="pizza-item">
+                <img src="pizza-deliciosa-tradicional-pizza-italiana_1328-3992.avif" alt="Pizza Quatro Queijos">
+                <h3>Pizza Quatro Queijos</h3>
+                <p>Preço: R$ 39,90</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <img src="chef-cozinhando-na-cozinha-vestindo-roupas-profissionais_23-2151208271.jpg" alt="Sobre Nós">
+        <p>Somos uma pizzaria familiar que começou com a paixão de dois amigos pelo sabor e qualidade das melhores pizzas. Com dedicação e ingredientes selecionados, trazemos o melhor para sua mesa. Nossa missão é encantar nossos clientes a cada mordida!</p>
+    </section>
+
+    <section class="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <form id="contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizza e Sabor. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,213 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajuste o padding para uma barra de navegação mais compacta */
+    background-color: #B50000; /* Cor de fundo vermelho para o cabeçalho */
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.icon {
+    width: 40px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre ícone e título */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white; /* Links na barra de navegação em branco */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #691F1F; /* Cor para o hover dos links, pode ser um tom mais claro de vermelho */
+}
+
+.intro-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6347; /* Cor de fundo dos botões */
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+#menu {
+    padding: 50px;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.pizzas-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pizza-item img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção Sobre Nós */
+#sobre {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+#sobre img {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #2f4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff6347; /* Cor do botão ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #010101;
+    color: white;
+}
+
+/* Fale Conosco */
+.fale-conosco {
+    background-color: #ff6347; /* Cor de fundo para o título Fale Conosco */
+    padding: 20px;
+    text-align: center;
+}
+
+.fale-conosco h2 {
+    color: white; /* Título em branco */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .intro-buttons a {
+        display: block;
+        margin: 10px auto;
+        padding: 15px 0;
+        width: 90%;
+        text-align: center;
+    }
+
+    .pizzas-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pizza-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #sobre img {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+    }
+}
